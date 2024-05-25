@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignement 3 Website</title>
+        
+        <meta name="robots" content="noindex,nofollow">
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+
+        <!-- ============================================ -->
+        <!--                  Navigation Group            -->
+        <!-- ============================================ -->   
+        <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Navigation List-->
+                <nav class="cs-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link cs-active" style="font-size: 25px; color: rgb(80, 198, 235); font-weight: bold;">
+                                    Home
+                                </a>
+                            </li>
+                            <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <span class="cs-li-link" style="font-size: 25px; color: rgb(255, 255, 255);">
+                                    Menu
+                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                                <ul class="cs-drop-ul">
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Specials</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Pizza</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Pasta</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Appetizers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link" style="font-size: 25px; color: rgb(255, 255, 255);">
+                                    Merchandise
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link" style="font-size: 25px; color: rgb(255, 255, 255);">
+                                    Career
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link" style="font-size: 25px; color: rgb(255, 255, 255);">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <span class="cs-li-link" style="font-size: 25px; color: rgb(255, 255, 255);">
+                                    Help
+                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                                <ul class="cs-drop-ul"> 
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Contact Us</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+
+        <!-- ============================================ -->
+        <!--                  Menu Group                  -->
+        <!-- ============================================ -->
+
+        <div id="cs-menu-group-1040">
+            <div class="cs-container">
+                <picture class="cs-icon-wrapper">
+                    <img style="margin-top: 120px;" class="cs-icon" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg" alt="divider" width="181" height="36" aria-hidden="true">
+                </picture>
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" loading="lazy" decoding="async" src="images/logo.png" alt="logo" width="209" height="200">
+                </a>
+                <h2 class="cs-title">Puckapunyal Pizza & Pasta</h2>
+
+                <!-- Promotion Banner -->
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg" alt="divider" width="181" height="36" aria-hidden="true">
+                        </picture>
+                        <a aria-label="go back to home" class="cs-logo" href="">
+                            <img class="cs-logo-img" loading="lazy" decoding="async" src="images/promotion.png" alt="logo" width="1000px" height="400">
+                        </a>
+                    </div>
+
+                <!--Breakfast-->
+                <h2 style="color: aliceblue;">Pizzas</h2>
+                <div id="cs-menu1-1040" class="cs-menu-group" data-category="one">
+                    <!--Breakfast Section 1-->
+                    <section class="cs-menu">
+                        <div class="cs-container">
+                            <ul class="cs-card-group">
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Breakfast</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <a href="" class="cs-button-solid">View more Pizzas</a>
+
+                <!--Lunch-->
+                <h2 style="color: aliceblue;">Pastas</h2>
+                <div id="cs-menu2-1040" class="cs-menu-group" data-category="two">
+                    <!--Lunch Section 1-->
+                    <section class="cs-menu">
+                        <div class="cs-container">
+                            <ul class="cs-card-group">
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Lunch</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <a href="" class="cs-button-solid">View more Pastas</a>
+
+                <!--Dinner-->
+                <h2 style="color: aliceblue;">Appetizers</h2>
+                <div id="cs-menu3-1040" class="cs-menu-group" data-category="three">
+                    <!--Dinner Section 1-->
+                    <section class="cs-menu">
+                        <div class="cs-container">
+                            <ul class="cs-card-group">
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Dinner</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-price">
+                                                $56
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <a href="" class="cs-button-solid">View more Appetizers</a>
+            </div>
+        </div>
+
+        <hr style="width: 70%; margin-top: 100px;">
+
+        <!-- ============================================ -->
+        <!--                  Reviews                      -->
+        <!-- ============================================ -->                  
+        <section id="reviews-62">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2  style="color: aliceblue;">Reviews</h2>
+                </div>
+                <ul class="cs-card-group" style="background-color: antiquewhite;">
+                    <li class="cs-item">
+                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile1.png" alt="profile" width="68" height="68">
+                        <span class="cs-name">John Doe</span>
+                        <span class="cs-desc">Texas</span>
+                        <p class="cs-item-text">
+                            Proin massa eros, quis fringilla sagittis. Euismod scelerisque varius sed nec consequat, turpis.
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.png" alt="profile" width="68" height="68">
+                        <span class="cs-name">Jane Smith</span>
+                        <span class="cs-desc">California</span>
+                        <p class="cs-item-text">
+                            Proin massa eros, quis fringilla sagittis. Euismod scelerisque varius sed nec consequat, turpis.
+                        </p>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" alt="profile" width="68" height="68">
+                        <span class="cs-name">Thomas Madden</span>
+                        <span class="cs-desc">Texas</span>
+                        <p class="cs-item-text">
+                            Proin massa eros, quis fringilla sagittis. Euismod scelerisque varius sed nec consequat, turpis.
+                        </p>
+                    </li>
+                </ul>
+                <a aria-label="read more reviews" href="" class="cs-button-solid">Read More</a>
+            </div>
+        </section>
+
+        <hr style="width: 70%; margin-top: 100px;">
+
+        <!-- ============================================ -->
+        <!--                  Footer                      -->
+        <!-- ============================================ -->
+
+        <footer id="footer-1390">
+            <div class="cs-container">
+                <div class="cs-top">
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <a href="" class="cs-link">Home</a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-link">About</a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-link">Services</a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-link">Blog</a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cs-bottom">
+                    <!--Social-->
+                    <ul class="cs-social">
+                        <li class="cs-social-li">
+                            <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                                <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="cs-social-li">
+                            <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                                <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="cs-social-li">
+                            <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                                <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="cs-social-li">
+                            <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                                <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="cs-copyright">
+                        © Copyright 2024 - <a href="" class="cs-copyright-link">Puckapunyal Pizza & Pasta</a>
+                    </span>
+                    <div class="cs-flex">
+                        <a href="" class="cs-copyright-link">Privacy Policy</a>
+                        <span class="cs-separater">|</span>
+                        <a href="" class="cs-copyright-link">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                                        
+        <script>
+            $( 'nav h2' ). click( function(){ $( 'nav ul' ).slideToggle(); } );
+        </script>  
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+            <!-- Refer to JavaScript file -->
+            <script src="script.js"></script>   
+
+    </body>
+</html>
