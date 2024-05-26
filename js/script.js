@@ -1,34 +1,36 @@
-document.querySelector( 'h1' ).addEventListener( 'click', showMessage );
+let openButton = document.querySelectorAll('.menu-button')
+let closeButton = document.querySelectorAll('.close-menu')
+let background = document.getElementById('.background')
 
-// Lab 10
-$( 'button' ).click( filterItems );
+openButton.forEach(button => {
+    button.addEventListener('click', () => {
+        let menus = document.querySelector(button.dataset.menu);
+        openDetail(menus);
+    });
+});
 
-function filterItems() {
-  let button = this;
-  let selector = $( this ).data( 'filter' );
-  console.log( selector );
-  $( '#products img' ).hide( 500 );
-  $( selector ).show( 500 );
+function openDetail(menus){
+    if (menus == null) return
+    menus.classList.add('active')
+    background.classList.add('active')
 }
 
-// Lab 9
-function showMesssage() {
-    alert( 'JavaScript!' );
-}
-// showMesssage();
-document.querySelector('h1').addEventListener('click', showMesssage); 
-// Function name without () behind, means won't be triggered immediately when loading body context
-// Will be called after action performed
-Fancybox.bind( "[data-fancybox]" );
+closeButton.forEach(button => {
+    button.addEventListener('click', () => {
+        let menus = button.closest('.menu');
+        closeDetail(menus);
+    });
+});
 
-// Implement function of filter buttons
-$('button').click(filterItems);
-
-function filterItems(){
-    let button = this;
-    let selector = $(button).data('filter');
-    console.log(selector);
-    // Hide everything, then show those selected
-    $( '#products img' ).not( selector ).hide( 500 );
-    $(selector).show(500);
+function closeDetail(menus){
+    if (menus == null) return
+    menus.classList.remove('active')
+    background.classList.remove('active')
 }
+
+background.addEventListener('click', () => {
+    let menus = document.querySelectorAll('.menu.active')
+    menus.forEach(menu => {
+        closeDetail(menu)
+    })
+})

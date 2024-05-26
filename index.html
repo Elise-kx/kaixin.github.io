@@ -3,17 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignement 3 Website</title>
-        
+        <title>|HomePage| Puckapunyal Pizza & Pasta</title>
+
         <meta name="robots" content="noindex,nofollow">
 
         <link rel="stylesheet" href="css/style.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <link rel="icon" href="images/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-min.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-min.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16-min.png">
+
+        <script defer src="js/script.js"></script>
     </head>
     <body>
 
@@ -105,7 +106,7 @@
                     <img style="margin-top: 120px;" class="cs-icon" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg" alt="divider" width="181" height="36" aria-hidden="true">
                 </picture>
                 <a aria-label="go back to home" class="cs-logo" href="">
-                    <img class="cs-logo-img" loading="lazy" decoding="async" src="images/logo.png" alt="logo" width="209" height="200">
+                    <img class="cs-logo-img" loading="lazy" decoding="async" src="images/logo-min.png" alt="logo" width="209" height="200">
                 </a>
                 <h2 class="cs-title">Puckapunyal Pizza & Pasta</h2>
 
@@ -115,88 +116,188 @@
                         <picture class="cs-icon-wrapper">
                             <img class="cs-icon" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg" alt="divider" width="181" height="36" aria-hidden="true">
                         </picture>
-                        <a aria-label="go back to home" class="cs-logo" href="">
-                            <img class="cs-logo-img" loading="lazy" decoding="async" src="images/promotion.png" alt="logo" width="1000px" height="400">
+                        <a aria-label="go back to home" class="imgbox" href="">
+                            <img class="center-fit" loading="lazy" decoding="async" src="images/promotion-min.png" alt="logo">
                         </a>
                     </div>
 
-                <!--Breakfast-->
-                <h2 style="color: aliceblue;">Pizzas</h2>
+                <!--Pizzas-->
+                <h2 class="cs-title" style="color: aliceblue;">Pizzas</h2>
                 <div id="cs-menu1-1040" class="cs-menu-group" data-category="one">
-                    <!--Breakfast Section 1-->
+                    <!--Pizzas Section 1-->
                     <section class="cs-menu">
                         <div class="cs-container">
                             <ul class="cs-card-group">
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
-                                        <div class="cs-info">
+                                        <source media="(max-width: 600px)" srcset="images/pepperoni-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/pepperoni-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/pepperoni-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Breakfast</span>
-                                            <span class="cs-price">
-                                                $56
-                                            </span>
+                                        <span class="cs-name">Classic Pepperoni</span>
+                                        <span class="cs-price">
+                                            $12.99
+                                        </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            A timeless favorite with a generous layer of spicy pepperoni slices on top of melted mozzarella cheese and a rich tomato sauce base.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu1" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu1">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Classic Pepperoni</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/pepperoni-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/pepperoni-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/pepperoni-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $12.99
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: rgb(242, 113, 0)">Meat</p>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    A timeless favorite with a generous layer of spicy pepperoni slices on top of melted mozzarella cheese and a rich tomato sauce base.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
+                                        <source media="(max-width: 600px)" srcset="images/supreme-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/supreme-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/supreme-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Meat Lover's Supreme</span>
                                             <span class="cs-price">
-                                                $56
+                                                $15.99
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            A hearty pizza loaded with pepperoni, sausage, bacon, ham, and a blend of mozzarella and cheddar cheese.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu2" class="menu-button">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="menu" id="menu2">
+                                        <div class="menu-header">
+                                            <span class="cs-name" style="color: black">Meat Lover's Supreme</span>
+                                            <button data-close-button class="close-menu">x</button>
+                                        </div>
+                                        <div class="menu-body">
+                                            <picture class="center"  aria-hidden="true">
+                                                <source media="(max-width: 600px)" srcset="images/supreme-min.jpg">
+                                                <source media="(min-width: 601px)" srcset="images/supreme-min.jpg">
+                                                <img loading="lazy" decoding="async" src="images/supreme-min.jpg" alt="food" width="160" height="160">
+                                            </picture>
+                                            <span class="cs-price" style="margin-top: 3%;">
+                                                $15.99
+                                            </span>
+                                            </h3>
+                                            <p class="cs-item-p"  style="color: rgb(242, 113, 0)">Meat</p>
+                                            <p class="cs-item-p"  style="color: black">
+                                                A hearty pizza loaded with pepperoni, sausage, bacon, ham, and a blend of mozzarella and cheddar cheese.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="background"></div>
+                                </li>
+                                <li class="cs-item">
+                                    <picture class="cs-picture"  aria-hidden="true">
+                                        <source media="(max-width: 600px)" srcset="images/seafood-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/seafood-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/seafood-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
+                                        <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Seafood Extravaganza</span>
+                                            <span class="cs-price">
+                                                $18.00
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            A gourmet pizza topped with shrimp, calamari, mussels, and a sprinkle of fresh herbs on a bed of mozzarella cheese.
+                                        </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu3" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu3">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Seafood Extravaganza</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/seafood-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/seafood-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/seafood-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $18.00
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: rgb(242, 113, 0)">Seafood</p>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    A gourmet pizza topped with shrimp, calamari, mussels, and a sprinkle of fresh herbs on a bed of mozzarella cheese.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
+                                        <source media="(max-width: 600px)" srcset="images/bbq-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/bbq-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/bbq-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">BBQ Chicken Feast</span>
                                             <span class="cs-price">
-                                                $56
+                                                $14.50
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            A savory pizza featuring BBQ sauce, grilled chicken, red onions, and cilantro, finished with a layer of melted mozzarella.
                                         </p>
-                                    </div>
-                                </li>
-                                <li class="cs-item">
-                                    <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
-                                        <div class="cs-info">
-                                        <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
-                                            <span class="cs-price">
-                                                $56
-                                            </span>
-                                        </h3>
-                                        <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                        </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu4" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu4">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">BBQ Chicken Feast</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/bbq-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/bbq-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/bbq-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $14.50
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: rgb(242, 113, 0)">Meat</p>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    A savory pizza featuring BBQ sauce, grilled chicken, red onions, and cilantro, finished with a layer of melted mozzarella.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                             </ul>
@@ -205,83 +306,178 @@
                 </div>
                 <a href="" class="cs-button-solid">View more Pizzas</a>
 
-                <!--Lunch-->
-                <h2 style="color: aliceblue;">Pastas</h2>
+                <!--Pastas-->
+                <h2 class="cs-title" style="color: aliceblue;">Pastas</h2>
                 <div id="cs-menu2-1040" class="cs-menu-group" data-category="two">
-                    <!--Lunch Section 1-->
+                    <!--Pastas Section 1-->
                     <section class="cs-menu">
                         <div class="cs-container">
                             <ul class="cs-card-group">
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
+                                        <source media="(max-width: 600px)" srcset="images/carbonara-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/carbonara-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/carbonara-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Lunch</span>
+                                            <span class="cs-name">Classic Spaghetti Carbonara</span>
                                             <span class="cs-price">
-                                                $56
+                                                $13.99
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            Traditional Italian pasta with creamy egg sauce, crispy pancetta, and freshly grated Parmesan cheese.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu5" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu5">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Classic Spaghetti Carbonara</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/carbonara-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/carbonara-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/carbonara-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $13.99
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    Traditional Italian pasta with creamy egg sauce, crispy pancetta, and freshly grated Parmesan cheese.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
+                                        <source media="(max-width: 600px)" srcset="images/vegetable-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/vegetable-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/vegetable-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Vegetable Primavera</span>
                                             <span class="cs-price">
-                                                $56
+                                                $11.99
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            A healthy pasta dish with a medley of seasonal vegetables, tossed in a light garlic and olive oil sauce.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu6" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu6">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Vegetable Primavera</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <source media="(max-width: 600px)" srcset="images/vegetable-min.jpg">
+                                                <source media="(min-width: 601px)" srcset="images/vegetable-min.jpg">
+                                                <img loading="lazy" decoding="async" src="images/vegetable-min.jpg" alt="food" width="160" height="160">
+                                            </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $11.99
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    A healthy pasta dish with a medley of seasonal vegetables, tossed in a light garlic and olive oil sauce.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                                        </picture>
+                                        <source media="(max-width: 600px)" srcset="images/bolognese-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/bolognese-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/bolognese-min.jpg" alt="food" width="160" height="160">
+                                    </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Bolognese Ragu</span>
                                             <span class="cs-price">
-                                                $56
+                                                $14.99
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            A hearty and flavorful pasta with slow-cooked ground beef, tomatoes, and Italian herbs, served over spaghetti.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu7" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu7">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Bolognese Ragu</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/bolognese-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/bolognese-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/bolognese-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $14.99
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    A hearty and flavorful pasta with slow-cooked ground beef, tomatoes, and Italian herbs, served over spaghetti.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        <source media="(max-width: 600px)" srcset="images/shrimp-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/shrimp-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/shrimp-min.jpg" alt="food" width="160" height="160">
                                         </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Shrimp Alfredo</span>
                                             <span class="cs-price">
-                                                $56
+                                                $16.99
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            Rich and creamy Alfredo sauce with succulent shrimp and fettuccine pasta, garnished with parsley.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu8" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu8">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Shrimp Alfredo</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/shrimp-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/shrimp-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/shrimp-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $16.99
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    Rich and creamy Alfredo sauce with succulent shrimp and fettuccine pasta, garnished with parsley.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                             </ul>
@@ -290,83 +486,179 @@
                 </div>
                 <a href="" class="cs-button-solid">View more Pastas</a>
 
-                <!--Dinner-->
-                <h2 style="color: aliceblue;">Appetizers</h2>
+                <!--Appetizers-->
+                <h2 class="cs-title" style="color: aliceblue;">Appetizers</h2>
                 <div id="cs-menu3-1040" class="cs-menu-group" data-category="three">
-                    <!--Dinner Section 1-->
+                    <!--Appetizers Section 1-->
                     <section class="cs-menu">
                         <div class="cs-container">
                             <ul class="cs-card-group">
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        <source media="(max-width: 600px)" srcset="images/garlic-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/garlic-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/garlic-min.jpg" alt="food" width="160" height="160">
                                         </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Dinner</span>
+                                            <span class="cs-name">Garlic Breadsticks</span>
                                             <span class="cs-price">
-                                                $56
+                                                $5.45
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            Warm and crispy breadsticks brushed with garlic butter and sprinkled with Parmesan cheese, served with marinara sauce.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu9" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu9">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Garlic Breadsticks</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/garlic-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/garlic-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/garlic-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $5.45
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    Warm and crispy breadsticks brushed with garlic butter and sprinkled with Parmesan cheese, served with marinara sauce.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        <source media="(max-width: 600px)" srcset="images/mozzarella-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/mozzarella-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/mozzarella-min.jpg" alt="food" width="160" height="160">
                                         </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Mozzarella Sticks</span>
                                             <span class="cs-price">
-                                                $56
+                                                $7.88
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            Golden-fried mozzarella cheese sticks, served with a tangy marinara dipping sauce.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu10" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu10">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Mozzarella Sticks</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/mozzarella-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/mozzarella-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/mozzarella-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $7.88
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    Golden-fried mozzarella cheese sticks, served with a tangy marinara dipping sauce.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        <source media="(max-width: 600px)" srcset="images/calamari-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/calamari-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/calamari-min.jpg" alt="food" width="160" height="160">
                                         </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Calamari Rings</span>
                                             <span class="cs-price">
-                                                $56
+                                                $8.88
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            Lightly breaded and fried calamari rings, served with a zesty marinara sauce and lemon wedges.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu11" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu11">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Calamari Rings</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/calamari-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/calamari-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/calamari-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $8.88
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    Lightly breaded and fried calamari rings, served with a zesty marinara sauce and lemon wedges.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                                 <li class="cs-item">
                                     <picture class="cs-picture"  aria-hidden="true">
-                                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                                        <source media="(max-width: 600px)" srcset="images/caprese-min.jpg">
+                                        <source media="(min-width: 601px)" srcset="images/caprese-min.jpg">
+                                        <img loading="lazy" decoding="async" src="images/caprese-min.jpg" alt="food" width="160" height="160">
                                         </picture>
                                         <div class="cs-info">
                                         <h3 class="cs-h3">
-                                            <span class="cs-name">Purple Corn Tostada</span>
+                                            <span class="cs-name">Caprese Skewers</span>
                                             <span class="cs-price">
-                                                $56
+                                                $6.99
                                             </span>
                                         </h3>
                                         <p class="cs-item-p">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            Fresh cherry tomatoes, mozzarella balls, and basil leaves drizzled with balsamic glaze, served on skewers.
                                         </p>
+                                        <div style="text-align: left; margin-top: 5%;">
+                                            <button data-menu="#menu12" class="menu-button">View Details</button>
+                                        </div>
+                                        <div class="menu" id="menu12">
+                                            <div class="menu-header">
+                                                <span class="cs-name" style="color: black">Caprese Skewers</span>
+                                                <button data-close-button class="close-menu">x</button>
+                                            </div>
+                                            <div class="menu-body">
+                                                <picture class="center"  aria-hidden="true">
+                                                    <source media="(max-width: 600px)" srcset="images/caprese-min.jpg">
+                                                    <source media="(min-width: 601px)" srcset="images/caprese-min.jpg">
+                                                    <img loading="lazy" decoding="async" src="images/caprese-min.jpg" alt="food" width="160" height="160">
+                                                </picture>
+                                                <span class="cs-price" style="margin-top: 3%;">
+                                                    $6.99
+                                                </span>
+                                                </h3>
+                                                <p class="cs-item-p"  style="color: black">
+                                                    Fresh cherry tomatoes, mozzarella balls, and basil leaves drizzled with balsamic glaze, served on skewers.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="background"></div>
                                     </div>
                                 </li>
                             </ul>
@@ -377,7 +669,7 @@
             </div>
         </div>
 
-        <hr style="width: 70%; margin-top: 100px;">
+        <hr style="width: 70%; margin-top: 80px;">
 
         <!-- ============================================ -->
         <!--                  Reviews                      -->
@@ -385,31 +677,29 @@
         <section id="reviews-62">
             <div class="cs-container">
                 <div class="cs-content">
-                    <h2  style="color: aliceblue;">Reviews</h2>
+                    <span class="cs-topper">Reviews</span>
+                    <h2  class="cs-title" style="color: aliceblue;">Customer Reviews & Ratings</h2>
                 </div>
                 <ul class="cs-card-group" style="background-color: antiquewhite;">
                     <li class="cs-item">
-                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile1.png" alt="profile" width="68" height="68">
                         <span class="cs-name">John Doe</span>
-                        <span class="cs-desc">Texas</span>
+                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/5-star-min.png" alt="5-star rating">
                         <p class="cs-item-text">
-                            Proin massa eros, quis fringilla sagittis. Euismod scelerisque varius sed nec consequat, turpis.
+                            The Alfredo pasta was absolutely divine! Perfectly creamy and delicious.                        
                         </p>
                     </li>
                     <li class="cs-item">
-                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.png" alt="profile" width="68" height="68">
                         <span class="cs-name">Jane Smith</span>
-                        <span class="cs-desc">California</span>
+                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/4-star-min.png" alt="4-star rating">
                         <p class="cs-item-text">
-                            Proin massa eros, quis fringilla sagittis. Euismod scelerisque varius sed nec consequat, turpis.
+                            The pepperoni pizza had a great crust and just the right amount of spice. Could use a bit more cheese.
                         </p>
                     </li>
                     <li class="cs-item">
-                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" alt="profile" width="68" height="68">
                         <span class="cs-name">Thomas Madden</span>
-                        <span class="cs-desc">Texas</span>
+                        <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="images/4-star-min.png" alt="5-star rating">
                         <p class="cs-item-text">
-                            Proin massa eros, quis fringilla sagittis. Euismod scelerisque varius sed nec consequat, turpis.
+                            The garlic breadsticks were soft and flavorful, perfect to start our meal. A bit more garlic would make them perfect.
                         </p>
                     </li>
                 </ul>
@@ -417,7 +707,7 @@
             </div>
         </section>
 
-        <hr style="width: 70%; margin-top: 100px;">
+        <hr style="width: 70%; margin-top: 30px;">
 
         <!-- ============================================ -->
         <!--                  Footer                      -->
@@ -480,12 +770,8 @@
             </div>
         </footer>
                                         
-        <script>
-            $( 'nav h2' ). click( function(){ $( 'nav ul' ).slideToggle(); } );
-        </script>  
-            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-            <!-- Refer to JavaScript file -->
-            <script src="script.js"></script>   
+        <!-- Refer to JavaScript file -->
+        <!-- <script src="js/script.js"></script> -->
 
     </body>
 </html>
